@@ -4,12 +4,12 @@ from typing import Dict
 import requests
 
 
-DATA_DIR: pathlib.Path = pathlib.Path("./data/")
+DATA_DIR: pathlib.Path = pathlib.Path(__file__).parents[1] / pathlib.Path("data/")
 
 SAMPLE_DATASETS: Dict[str, str] = {
     "Tweets-1M.csv": "https://s.anish.io/cleanlab/datasets/Tweets-1M.csv",
     "Tweets-100M.csv": "https://s.anish.io/cleanlab/datasets/Tweets-100M.csv",
-    "amazon-text-demo": "https://s.cleanlab.ai/amazon-text-demo.csv",
+    "amazon-text-demo.csv": "https://s.cleanlab.ai/amazon-text-demo.csv",
 }
 
 
