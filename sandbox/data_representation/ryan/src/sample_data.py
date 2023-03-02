@@ -4,7 +4,8 @@ from typing import Dict
 import requests
 
 
-DATA_DIR: pathlib.Path = pathlib.Path(__file__).parents[1] / pathlib.Path("data/")
+DATA_DIR: pathlib.Path = pathlib.Path("dbfs://FileStore/data_representation_sanbdbox/data")
+
 
 SAMPLE_DATASETS: Dict[str, str] = {
     "Tweets-1M.csv": "https://s.anish.io/cleanlab/datasets/Tweets-1M.csv",
